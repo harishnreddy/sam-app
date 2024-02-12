@@ -27,8 +27,6 @@ Resources:
       DeploymentPreference:
         Type: !If [IsProduction, "Canary10Percent5Minutes", "AllAtOnce"]
         Alarms: !If [IsProduction, [!Ref CanaryErrorsAlarm], []]
-      DeploymentPreference:
-        Type: Canary10Percent5Minutes
       Architectures:
         - x86_64
       Events:
