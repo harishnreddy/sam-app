@@ -42,6 +42,7 @@ jobs:
       - run: |
           echo 'running unit tests'
           pip3 install pytest pytest-mock
+          python3 -m pytest tests/unit
         # trigger the tests here
         #echo 'Running unit tests'
         #pip3 install pytest pytest-mock
