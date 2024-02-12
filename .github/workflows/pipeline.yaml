@@ -41,6 +41,7 @@ jobs:
       - uses: actions/checkout@v3
       - run: |
           echo 'running unit tests'
+          pip3 install pytest pytest-mock
         # trigger the tests here
         #echo 'Running unit tests'
         #pip3 install pytest pytest-mock
